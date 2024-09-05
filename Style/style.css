@@ -1,0 +1,193 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #005F73, #F2F2F2); /* Gradiente com verde escuro e cinza claro */
+    color: #0A4D68; /* Azul escuro para o texto */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ffffff; /* Texto branco */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ffffff; /* Texto branco */
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    background-color: #005F73; /* Verde escuro para os botões */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav button i {
+    margin-right: 8px;
+}
+
+nav button:hover {
+    background-color: #003D40; /* Verde mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+nav button:active {
+    transform: scale(0.95); /* Reduz o botão ao ser clicado */
+}
+
+/* Seções */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Define uma largura máxima para o conteúdo principal */
+}
+
+section {
+    background-color: #ffffff; /* Fundo branco para as seções */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px; /* Define uma largura máxima para as seções */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section input[type="text"] {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #005F73;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+section button {
+    background-color: #005F73;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section button:hover {
+    background-color: #003D40;
+}
+
+/* SlideShow */
+#box2 {
+    position: relative;
+}
+
+#imagem {
+    width: 100%;
+    max-width: 600px; /* Define uma largura máxima para a imagem */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-bottom: 10px;
+}
+
+#ant, #prox {
+    background-color: #005F73; /* Verde escuro para os botões */
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#ant {
+    left: 10px;
+}
+
+#prox {
+    right: 10px;
+}
+
+#ant:hover, #prox:hover {
+    background-color: #003D40; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Cronômetro */
+#tempo {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #003D40; /* Cor de fundo mais escura para o rodapé */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid #005F73; /* Borda superior para destacar o rodapé */
+    position: relative; /* Rodapé não fixado, está abaixo do conteúdo */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    #ant, #prox {
+        width: 80px;
+        font-size: 0.9em;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+}

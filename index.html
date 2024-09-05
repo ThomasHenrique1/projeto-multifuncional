@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Multifuncional</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Ícones -->
+</head>
+<body>
+    <header>
+        <h1>Projeto Multifuncional</h1>
+        <p>Um projeto que combina cronômetro, slideshow e tabuada em um só lugar!</p>
+    </header>
+
+    <main>
+        <nav>
+            <button type="button" id="btn1"><i class="fas fa-stopwatch"></i> Cronômetro</button>
+            <button type="button" id="btn2"><i class="fas fa-images"></i> SlideShow</button>
+            <button type="button" id="btn3"><i class="fas fa-calculator"></i> Tabuada</button>
+        </nav>
+
+        <section id="box1">
+            <h2>Cronômetro</h2>
+            <button type="button" id="btn5">Iniciar/Pausar Cronômetro</button>
+            <div id="tempo">00h:00m:00s:00mm</div>
+        </section>
+
+        <section id="box2">
+            <h2>SlideShow</h2>
+            <img src="Image/img1.jpg" id="imagem" alt="Imagem do slideshow">
+            <br>
+            <button type="button" id="ant"><i class="fas fa-chevron-left"></i> Anterior</button>
+            <button type="button" id="prox"><i class="fas fa-chevron-right"></i> Próximo</button>
+        </section>
+
+        <section id="box3">
+            <h2>Tabuada</h2>
+            <label for="txttab">Qual tabuada você deseja saber?</label>
+            <input type="text" id="txttab" placeholder="Digite um número">
+            <button type="button" id="btnTab">Mostrar Tabuada</button>
+            <article id="tabuada"></article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Projeto Multifuncional. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
